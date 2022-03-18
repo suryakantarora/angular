@@ -1,0 +1,20 @@
+<div class="bg-light d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-white border-right" id="sidebar-wrapper" [ngClass]="global.showMenu ? 'hide' : 'show'">
+      <div class="bg-primary text-white sidebar-heading">Dashboard   </div>
+      <div class="bg-white list-group list-group-flush">
+        <app-sidebar></app-sidebar>
+      </div>
+    </div>
+    <!-- sidebar-wrapper -->
+  
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <app-navbar></app-navbar>
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- page-content-wrapper -->
+  
+  </div>
+  

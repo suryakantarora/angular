@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     // this.userName = localStorage.getItem('username');
     this.rest.sendGetRequest('all').subscribe(
       (result: any) => {
-        console.log('Success');
+        console.log('Success: ' + JSON.stringify(result));
         this.countryList = result;
       }, (error: any) => {
         console.log('Error');
